@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Summarize Me",
+  "version": "0.0.1",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}

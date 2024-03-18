@@ -1,0 +1,27 @@
+.dokodu_summary_popup_background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.dokodu_summary_popup_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 300px;
+    text-align: center;
+}
+
+.dokodu_summary_popup {
+    font-size: 16px;
+    color: #333;
+}
